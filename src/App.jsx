@@ -263,24 +263,24 @@ ${propsCode}${emitCode}${dataCode}${computedCode}${methodsCode}${watchCode}${lif
           <p className="text-slate-300">Automatically convert Vue 2 components to Vue 3 with Composition API</p>
         </div>
 
-        {/* Tabs */}
-        <div className="flex gap-4 mb-6">
+        {/* Tabs - Tab View Style */}
+        <div className="flex gap-0 mb-6 border-b-2 border-slate-600">
           <button
             onClick={() => setActiveTab('converter')}
-            className={`px-6 py-2 rounded-lg font-semibold transition ${
+            className={`px-6 py-3 font-semibold transition border-b-4 ${
               activeTab === 'converter'
-                ? 'bg-blue-600 text-white'
-                : 'bg-slate-700 text-slate-300 hover:bg-slate-600'
+                ? 'border-blue-500 text-blue-300'
+                : 'border-transparent text-slate-400 hover:text-slate-300'
             }`}
           >
             Converter
           </button>
           <button
             onClick={() => setActiveTab('guide')}
-            className={`px-6 py-2 rounded-lg font-semibold transition ${
+            className={`px-6 py-3 font-semibold transition border-b-4 ${
               activeTab === 'guide'
-                ? 'bg-blue-600 text-white'
-                : 'bg-slate-700 text-slate-300 hover:bg-slate-600'
+                ? 'border-blue-500 text-blue-300'
+                : 'border-transparent text-slate-400 hover:text-slate-300'
             }`}
           >
             Quick Guide
